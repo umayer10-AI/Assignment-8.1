@@ -4,7 +4,7 @@ import CardList from './CardList';
 const Cards = ({data}) => {
     return (
         <div>
-            <div className='grid grid-cols-1 lg:grid-cols-4 gap-4'>
+            <div className='grid grid-cols-1 lg:grid-cols-4 gap-5'>
                 {
                     data.map(v => <CardList key={v.id} p={v}></CardList>)
                 }
