@@ -6,6 +6,7 @@ import Link from 'next/link';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { FcGoogle } from 'react-icons/fc';
+import { Flip, toast } from 'react-toastify';
 
 const SignInPage = () => {
 
@@ -25,10 +26,31 @@ const SignInPage = () => {
         console.log({data,error})
 
         if(data){
-          alert("Data Successfully")
+          router.push('/')
+          toast.success('Login Successfull', {
+              position: "top-center",
+              autoClose: 500,
+              hideProgressBar: false,
+              closeOnClick: false,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "dark",
+              transition: Flip,
+          });
         }
         if(error){
-          alert(error.message)
+          toast.error(`${error.message}`, {
+              position: "top-center",
+              autoClose: 500,
+              hideProgressBar: false,
+              closeOnClick: false,
+              pauseOnHover: true,
+              draggable: true,
+              progress: undefined,
+              theme: "dark",
+              transition: Flip,
+          });
         }
 
     }

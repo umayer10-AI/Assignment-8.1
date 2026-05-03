@@ -17,9 +17,11 @@ const Navbar = () => {
        <div className='border-b border-b-slate-600'>
          <div className='flex justify-between items-center py-3 w-[90%] mx-auto'>
             <div className='flex items-center gap-1'>
-                <Image 
-                src={'https://img.icons8.com/?size=100&id=OYbXGW7sJiOG&format=png&color=000000'}
-                width={38} height={38} alt='book'></Image>
+                <Link href={'/'}>
+                    <Image 
+                    src={'https://img.icons8.com/?size=100&id=OYbXGW7sJiOG&format=png&color=000000'}
+                    width={38} height={38} alt='book'></Image>
+                </Link>
                 <h2 className='text-xl font-bold'>Online Book</h2>
             </div>
             <div className='font-semibold text-sm flex items-center justify-center gap-5'>
@@ -29,12 +31,13 @@ const Navbar = () => {
             </div>
             {
                 user? <div className='text-sm flex items-center gap-2'>
+                     <Link href={'/profile'}>
                      <Avatar size='sm'>
                         <Avatar.Image alt="Umayer Ahmad"
                         referrerPolicy='no-referrer'
                          src={user?.image} />
                         <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
-                    </Avatar>
+                    </Avatar></Link>
                     <Button size='sm' variant='danger' onClick={async() => await authClient.signOut()}>Sign Out</Button>
                 </div> : 
                 <div className='text-sm flex items-center gap-2'>
