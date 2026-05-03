@@ -9,8 +9,10 @@ const page = async () => {
 
     return (
         <div>
-            <h2 className='text-2xl font-bold my-5 bg-linear-to-r from-cyan-500 to-blue-600 text-transparent bg-clip-text'>All Books</h2>
-            <SearchBar></SearchBar>
+            <h2 className='text-2xl font-bold mt-5 bg-linear-to-r from-cyan-500 to-blue-600 text-transparent bg-clip-text'>All Books</h2>
+            <div className='flex justify-center'>
+                <SearchBar></SearchBar>
+            </div>
             <Cards data={data}></Cards>
         </div>
     );
