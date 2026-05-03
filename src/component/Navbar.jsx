@@ -29,7 +29,7 @@ const Navbar = () => {
             </div>
             {
                 user? <div className='text-sm flex items-center gap-2'>
-                     <Avatar>
+                     <Avatar size='sm'>
                         <Avatar.Image alt="Umayer Ahmad"
                         referrerPolicy='no-referrer'
                          src={user?.image} />
