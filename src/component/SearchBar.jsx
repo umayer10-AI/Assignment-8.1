@@ -6,6 +6,7 @@ import React, { useContext } from 'react';
 const SearchBar = () => {
 
     const {s,setS} = useContext(Data)
+    console.log(s)
 
     return (
         <div className='mb-5'>

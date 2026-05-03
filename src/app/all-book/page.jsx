@@ -1,4 +1,4 @@
-import Cards from '@/component/Cards';
+import Emergency from '@/component/Emergency';
 import SearchBar from '@/component/SearchBar';
 import { getPost } from '@/lib/fetching';
 import React from 'react';
@@ -13,7 +13,7 @@ const page = async () => {
             <div className='flex justify-center'>
                 <SearchBar></SearchBar>
             </div>
-            <Cards data={data}></Cards>
+            <Emergency data={data}></Emergency>
         </div>
     );
 };
