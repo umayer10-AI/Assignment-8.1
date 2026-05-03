@@ -113,7 +113,7 @@ const SignUpPage = () => {
 
         <div className="space-y-2">
             <div className="flex gap-2 justify-center">
-          <Button className={"bg-linear-to-r from-green-500 via-blue-500 to-green-500"} type="submit">
+          <Button className={"bg-linear-to-r from-cyan-500 to-blue-600"} type="submit">
             <Check />
             Register
           </Button>
@@ -122,7 +122,7 @@ const SignUpPage = () => {
           </Button>
         </div>
         <div className="mt-4 space-y-1">
-            <h2 className="font-semibold text-center text-sm">Already have an account? <Link href={'/signin'} className="text-blue-600">Login</Link></h2>
+            <h2 className="font-semibold text-center text-sm">Already have an account? <Link href={'/signin'} className="text-green-500">Login</Link></h2>
           <h2 className="text-center">Or</h2>
           <Button className={'w-full shadow'} variant='secondary'><FcGoogle />Sign In With Google</Button>
         </div>

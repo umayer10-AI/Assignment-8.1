@@ -35,11 +35,11 @@ const Navbar = () => {
                          src={user?.image} />
                         <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
                     </Avatar>
-                    <Button size='sm' variant='danger'>Sign Out</Button>
+                    <Button size='sm' variant='danger' onClick={async() => await authClient.signOut()}>Sign Out</Button>
                 </div> : 
                 <div className='text-sm flex items-center gap-2'>
-                    <Link href={'/signup'}>Sign Up</Link>
-                    <Link href={'/signin'}>Sign In</Link>
+                    <Link href={'/signup'}><Button className={'bg-linear-to-r from-cyan-500 to-blue-600'}>Sign Up</Button></Link>
+                    <Link href={'/signin'}><Button variant='secondary'>Sign In</Button></Link>
                 </div>
             }
         </div>
