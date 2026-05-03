@@ -1,4 +1,5 @@
 "use client"
+import ModalTask from '@/component/ModalTask';
 import { authClient } from '@/lib/auth-client';
 import { Avatar } from '@heroui/react';
 import React from 'react';
@@ -19,6 +20,7 @@ const page = () => {
                 </Avatar>
             <h2 className='font-bold text-2xl'>{user?.name}</h2>
             <h2 className='text-gray-400'>{user?.email}</h2>
+            <ModalTask></ModalTask>
             </div>
         </div>
     );
