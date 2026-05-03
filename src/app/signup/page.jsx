@@ -1,7 +1,9 @@
 "use client"
+import { authClient } from '@/lib/auth-client';
 import { Check, Eye, EyeSlash } from '@gravity-ui/icons';
 import { Button, FieldError, Form, Input, InputGroup, Label, TextField } from '@heroui/react';
 import Link from 'next/link';
+import { useRouter } from 'next/navigation';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { FcGoogle } from 'react-icons/fc';
@@ -11,9 +13,28 @@ const SignUpPage = () => {
     const {register,handleSubmit,formState: { errors }} = useForm()
 
     const [isVisible, setIsVisible] = useState(false);
+    const router = useRouter()
 
     const a = async (v) => {
-      console.log(v)
+
+        const { data, error } = await authClient.signUp.email({
+            name: v.name,
+            email: v.email,
+            password: v.password,
+            image: v.image,
+            callbackURL: "/",
+        });
+
+        console.log({data,error})
+
+        if(data){
+          alert("Data Successfully")
+          router.push('/')
+        }
+        if(error){
+          alert(error.message)
+        }
+
     }
 
     return (
@@ -101,7 +122,7 @@ const SignUpPage = () => {
           </Button>
         </div>
         <div className="mt-4 space-y-1">
-            <h2 className="font-semibold text-center text-sm">Already have an account? <Link href={'/login'} className="text-blue-600">Login</Link></h2>
+            <h2 className="font-semibold text-center text-sm">Already have an account? <Link href={'/signin'} className="text-blue-600">Login</Link></h2>
           <h2 className="text-center">Or</h2>
           <Button className={'w-full shadow'} variant='secondary'><FcGoogle />Sign In With Google</Button>
         </div>
