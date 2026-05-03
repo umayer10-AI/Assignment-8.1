@@ -1,11 +1,12 @@
 import React from 'react';
+import CardList from './CardList';
 
-const Cards = () => {
+const Cards = ({data}) => {
     return (
         <div>
             <div className='grid grid-cols-1 lg:grid-cols-4 gap-4'>
                 {
-                    all.map(v => <CardList key={v.id} p={v}></CardList>)
+                    data.map(v => <CardList key={v.id} p={v}></CardList>)
                 }
             </div>
         </div>
