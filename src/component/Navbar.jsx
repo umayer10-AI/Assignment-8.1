@@ -10,9 +10,12 @@ const Navbar = () => {
     const p = usePathname()
 
     return (
-        <div className='flex justify-between items-center py-4 w-[90%] mx-auto'>
-            <div className='flex items-center gap-2'>
-                <Image src={'/g.png'} width={32} height={32} alt='book'></Image>
+       <div className='border-b border-b-slate-600'>
+         <div className='flex justify-between items-center py-3 w-[90%] mx-auto'>
+            <div className='flex items-center gap-1'>
+                <Image 
+                src={'https://img.icons8.com/?size=100&id=OYbXGW7sJiOG&format=png&color=000000'}
+                width={38} height={38} alt='book'></Image>
                 <h2 className='text-xl font-bold'>Online Book</h2>
             </div>
             <div className='font-semibold text-sm flex items-center justify-center gap-5'>
@@ -25,6 +28,7 @@ const Navbar = () => {
                 <Link href={'/signin'}>Sign In</Link>
             </div>
         </div>
+       </div>
     );
 };
 
