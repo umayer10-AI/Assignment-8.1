@@ -17,9 +17,9 @@ const page = async ({searchParams}) => {
             <div className='flex justify-center'>
                 <SearchBar></SearchBar>
             </div>
-            <div className='grid grid-cols-1 lg:grid-cols-4 gap-4'>
+            <div className='grid grid-cols-1 lg:grid-cols-4 gap-5'>
             <div className='rounded-lg'>
-                <Category></Category>
+                <Category k={category}></Category>
             </div>
             <div className='col-span-3'>
                 <div>
