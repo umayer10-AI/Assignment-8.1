@@ -16,7 +16,7 @@ const Banner = async () => {
                     <Marquee>
                         <div className='flex gap-10'>
                             {
-                                name.map(v => <h2 className='font-semibold text-gray-300'>New Arrivals: {v.title}</h2>)
+                                name.map(v => <h2 key={v.id} className='font-semibold text-gray-300'>New Arrivals: {v.title}</h2>)
                             }
                         </div>
                     </Marquee>
