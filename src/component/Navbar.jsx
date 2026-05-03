@@ -19,9 +19,9 @@ const Navbar = () => {
                 <h2 className='text-xl font-bold'>Online Book</h2>
             </div>
             <div className='font-semibold text-sm flex items-center justify-center gap-5'>
-                <Link href={'/'}>{p==='/'? <Button size='sm' className={'bg-linear-to-r from-cyan-500 to-blue-600'}>Home</Button> :<button>Home</button>}</Link>
-                <Link href={'/all-book'}>{p==='/all-book'? <Button size='sm' className={'bg-linear-to-r from-cyan-500 to-blue-600'}>All book</Button> :<button>All book</button>}</Link>
-                <Link href={'/profile'}>{p==='/profile'? <Button size='sm' className={'bg-linear-to-r from-cyan-500 to-blue-600'}>Profile</Button> :<button>Profile</button>}</Link>
+                <Link href={'/'}>{p==='/'? <Button size='sm' className={'bg-linear-to-r from-cyan-500 to-blue-600'}>Home</Button> :<button className='cursor-pointer'>Home</button>}</Link>
+                <Link href={'/all-book'}>{p==='/all-book'? <Button size='sm' className={'bg-linear-to-r from-cyan-500 to-blue-600'}>All book</Button> :<button className='cursor-pointer'>All book</button>}</Link>
+                <Link href={'/profile'}>{p==='/profile'? <Button size='sm' className={'bg-linear-to-r from-cyan-500 to-blue-600'}>Profile</Button> :<button className='cursor-pointer'>Profile</button>}</Link>
             </div>
             <div className='text-sm flex items-center gap-2'>
                 <Link href={'/signup'}>Sign Up</Link>
