@@ -4,9 +4,12 @@ import SearchBar from '@/component/SearchBar';
 import { getPost } from '@/lib/fetching';
 import React from 'react';
 
-const page = async () => {
+const page = async ({searchParams}) => {
 
     const data = await getPost()
+    const {category} = await searchParams
+    const f = category? [...data].filter(v => v.category.toLowerCase() === category.toLowerCase()) : [...data]
+    console.log(category)
 
     return (
         <div>
@@ -20,7 +23,7 @@ const page = async () => {
             </div>
             <div className='col-span-3'>
                 <div>
-                    <Emergency data={data}></Emergency>
+                    <Emergency data={f}></Emergency>
                 </div>
             </div>
         </div>
