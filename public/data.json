@@ -33,7 +33,7 @@
     "description": "A time-travel story where a young boy gets stuck between past and future.",
     "category": "Story",
     "available_quantity": 10,
-    "image_url": "https://example.com/images/lost-in-time.jpg"
+    "image_url": "https://plus.unsplash.com/premium_photo-1721762724239-e5fbfc8ef3c1?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjF8fGJvb2tzfGVufDB8fDB8fHww"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "description": "Learn the core concepts of JavaScript for modern web development.",
     "category": "Tech",
     "available_quantity": 15,
-    "image_url": "https://example.com/images/js-essentials.jpg"
+    "image_url": "https://plus.unsplash.com/premium_photo-1682125773446-259ce64f9dd7?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjV8fGJvb2tzfGVufDB8fDB8fHww"
   },
   {
     "id": 6,
@@ -51,7 +51,7 @@
     "description": "Explore the history and future of human space missions.",
     "category": "Science",
     "available_quantity": 7,
-    "image_url": "https://example.com/images/space-exploration.jpg"
+    "image_url": "https://images.unsplash.com/photo-1513001900722-370f803f498d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjh8fGJvb2tzfGVufDB8fDB8fHww"
   },
   {
     "id": 7,
@@ -60,7 +60,7 @@
     "description": "A thrilling story about a secret village hidden from the modern world.",
     "category": "Story",
     "available_quantity": 9,
-    "image_url": "https://example.com/images/hidden-village.jpg"
+    "image_url": "https://images.unsplash.com/photo-1591951425600-d09958978584?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mjd8fGJvb2tzfGVufDB8fDB8fHww"
   },
   {
     "id": 8,
@@ -69,7 +69,7 @@
     "description": "Step-by-step guide to building dynamic web apps using React.",
     "category": "Tech",
     "available_quantity": 18,
-    "image_url": "https://example.com/images/react-beginners.jpg"
+    "image_url": "https://plus.unsplash.com/premium_photo-1677187301535-b46cec7b2cc8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGJvb2tzfGVufDB8fDB8fHww"
   },
   {
     "id": 9,
@@ -78,7 +78,7 @@
     "description": "A deep dive into how the human brain works and processes information.",
     "category": "Science",
     "available_quantity": 6,
-    "image_url": "https://example.com/images/human-brain.jpg"
+    "image_url": "https://images.unsplash.com/photo-1512820790803-83ca734da794?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzZ8fGJvb2tzfGVufDB8fDB8fHww"
   },
   {
     "id": 10,
@@ -87,7 +87,7 @@
     "description": "A suspenseful story filled with mystery, darkness, and unexpected twists.",
     "category": "Story",
     "available_quantity": 11,
-    "image_url": "https://example.com/images/shadows-night.jpg"
+    "image_url": "https://images.unsplash.com/photo-1531988042231-d39a9cc12a9a?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDB8fGJvb2tzfGVufDB8fDB8fHww"
   },
   {
     "id": 11,
@@ -96,7 +96,7 @@
     "description": "A practical guide to building scalable backend applications with Node.js.",
     "category": "Tech",
     "available_quantity": 14,
-    "image_url": "https://example.com/images/nodejs-action.jpg"
+    "image_url": "https://images.unsplash.com/photo-1476275466078-4007374efbbe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NDJ8fGJvb2tzfGVufDB8fDB8fHww"
   },
   {
     "id": 12,
@@ -105,6 +105,6 @@
     "description": "Understanding the causes, effects, and solutions to climate change.",
     "category": "Science",
     "available_quantity": 5,
-    "image_url": "https://example.com/images/climate-change.jpg"
+    "image_url": "https://images.unsplash.com/photo-1521056787327-165dc2a32836?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NTB8fGJvb2tzfGVufDB8fDB8fHww"
   }
 ]
