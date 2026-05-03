@@ -1,4 +1,5 @@
 "use client"
+import { authClient } from "@/lib/auth-client";
 import {Button, Input, Label, Modal, Surface, TextField} from "@heroui/react";
 import React from 'react';
 import { useForm } from "react-hook-form";
@@ -9,11 +10,15 @@ const ModalTask = () => {
 
     const {register,handleSubmit,formState: { errors }} = useForm()
 
-    const a = (v) => {
+    const a = async (v) => {
         
         const name = v.name
         const image = v.url
-        // console.log(name,image)
+        
+        await authClient.updateUser({
+            name,
+            image,
+        })
     }
 
     return (
