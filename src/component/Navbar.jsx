@@ -1,5 +1,6 @@
 "use client"
-import { Button } from '@heroui/react';
+import { authClient } from '@/lib/auth-client';
+import { Avatar, Button } from '@heroui/react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -8,6 +9,9 @@ import React from 'react';
 const Navbar = () => {
 
     const p = usePathname()
+    const { data: session } = authClient.useSession()
+
+    const user = session?.user
 
     return (
        <div className='border-b border-b-slate-600'>
@@ -23,10 +27,21 @@ const Navbar = () => {
                 <Link href={'/all-book'}>{p==='/all-book'? <Button size='sm' className={'bg-linear-to-r from-cyan-500 to-blue-600'}>All book</Button> :<button className='cursor-pointer'>All book</button>}</Link>
                 <Link href={'/profile'}>{p==='/profile'? <Button size='sm' className={'bg-linear-to-r from-cyan-500 to-blue-600'}>Profile</Button> :<button className='cursor-pointer'>Profile</button>}</Link>
             </div>
-            <div className='text-sm flex items-center gap-2'>
-                <Link href={'/signup'}>Sign Up</Link>
-                <Link href={'/signin'}>Sign In</Link>
-            </div>
+            {
+                user? <div className='text-sm flex items-center gap-2'>
+                     <Avatar>
+                        <Avatar.Image alt="Umayer Ahmad"
+                        referrerPolicy='no-referrer'
+                         src={user?.image} />
+                        <Avatar.Fallback>{user?.name.charAt(0)}</Avatar.Fallback>
+                    </Avatar>
+                    <Button size='sm' variant='danger'>Sign Out</Button>
+                </div> : 
+                <div className='text-sm flex items-center gap-2'>
+                    <Link href={'/signup'}>Sign Up</Link>
+                    <Link href={'/signin'}>Sign In</Link>
+                </div>
+            }
         </div>
        </div>
     );
