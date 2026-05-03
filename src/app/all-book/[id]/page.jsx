@@ -14,7 +14,7 @@ const page = async ({params}) => {
     console.log(book)
 
     return (
-        <div className="min-h-screen bg-gray-950 text-white px-4 py-10">
+        <div className="rounded-xl bg-gray-950 text-white px-4 py-10 shadow-lg shadow-cyan-500">
       <div className="max-w-5xl mx-auto grid md:grid-cols-2 gap-10 items-center">
         
         {/* Image */}

@@ -15,7 +15,7 @@ const Navbar = () => {
 
     return (
        <div className='border-b border-b-slate-600'>
-         <div className='flex justify-between items-center py-3 w-[90%] mx-auto'>
+         <div className='flex flex-col lg:flex-row gap-3 lg:gap-0 justify-between items-center py-3 w-[90%] mx-auto'>
             <div className='flex items-center gap-1'>
                 <Link href={'/'}>
                     <Image 

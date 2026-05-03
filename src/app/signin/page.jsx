@@ -63,7 +63,7 @@ const SignInPage = () => {
 
     return (
         <div className="flex justify-center">
-      <Form className="flex w-80 shadow border lg:w-100 p-5 mt-5 rounded-xl flex-col gap-4" onSubmit={handleSubmit(a)}>
+      <Form className="flex shadow-md shadow-cyan-500 w-80 border lg:w-100 p-5 mt-5 rounded-xl flex-col gap-4" onSubmit={handleSubmit(a)}>
 
         <h2 className="text-2xl font-bold text-center">Sign In</h2>
 

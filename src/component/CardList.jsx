@@ -5,7 +5,7 @@ import React from 'react';
 
 const CardList = ({p}) => {
     return (
-        <div className='rounded-2xl border border-gray-400 space-y-1.5 hover:scale-105 overflow-hidden transition duration-500 shadow-xl'>
+        <div className='rounded-2xl border border-gray-400 space-y-1.5 hover:scale-105 shadow-md shadow-cyan-500 overflow-hidden transition duration-500'>
             <div className='relative aspect-square'>
                 <Image src={p.image_url} fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"

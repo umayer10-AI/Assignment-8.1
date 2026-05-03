@@ -9,7 +9,7 @@ const Banner = async () => {
     const name = await getPost()
 
     return (
-        <div className='h-[60vh] rounded-lg bg-[url("https://plus.unsplash.com/premium_photo-1677187301535-b46cec7b2cc8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGJvb2tzfGVufDB8fDB8fHww")] bg-cover bg-no-repeat bg-center'>
+        <div className='h-[60vh] rounded-lg bg-[url("https://plus.unsplash.com/premium_photo-1677187301535-b46cec7b2cc8?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzN8fGJvb2tzfGVufDB8fDB8fHww")] bg-cover bg-no-repeat bg-center shadow-md shadow-cyan-500'>
             <div className='bg-black/50 h-full flex items-center justify-center'>
                 <div className='max-w-75 lg:max-w-2xl mx-auto space-y-4'>
                     <h2 className='text-2xl lg:text-6xl font-bold'>Online Book Borrowing Platform</h2>
