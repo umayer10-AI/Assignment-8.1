@@ -1,23 +1,29 @@
 "use client"
 import { Data } from '@/context/Context';
-import { Label, SearchField } from '@heroui/react';
+import { Button, Label, SearchField } from '@heroui/react';
 import React, { useContext } from 'react';
 
 const SearchBar = () => {
 
-    const {s,setS} = useContext(Data)
-    console.log(s)
+    const {s,setS,setC} = useContext(Data)
+    const a = () => {
+        setC(s)
+    }
+    // console.log(s)
 
     return (
-        <div className='mb-5'>
-            <SearchField name="search">
-                <Label>Search</Label>
-                <SearchField.Group className={'shadow-md shadow-cyan-500'}>
-                    <SearchField.SearchIcon />
-                    <SearchField.Input onChange={(e) => setS(e.target.value)} className="w-70" placeholder="Search..." />
-                    <SearchField.ClearButton />
-                </SearchField.Group>
-            </SearchField>
+        <div className='my-5'>
+            <div>
+                <SearchField name="search">
+                    <Label>Search</Label>
+                    <SearchField.Group className={'shadow-md shadow-cyan-500'}>
+                        <SearchField.SearchIcon />
+                        <SearchField.Input onChange={(e) => setS(e.target.value)} className="w-70" placeholder="Search..." />
+                        <SearchField.ClearButton />
+            <button onClick={a} className='px-3 py-2 bg-blue-500 text-white font-semibold rounded-r-xl'>Search</button>
+                    </SearchField.Group>
+                </SearchField>
+            </div>
         </div>
     );
 };

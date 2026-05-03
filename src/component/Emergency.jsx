@@ -5,9 +5,9 @@ import { Data } from '@/context/Context';
 
 const Emergency = ({data}) => {
 
-    const {s,setS} = useContext(Data)
+    const {c} = useContext(Data)
     const f = [...data]
-    const a = f.filter(v => v.title.toLowerCase().includes(s))
+    const a = f.filter(v => v.title.toLowerCase().includes(c))
 
     return (
         <div>
