@@ -9,7 +9,6 @@ const SearchBar = () => {
     const a = () => {
         setC(s)
     }
-    // console.log(s)
 
     return (
         <div className='my-5'>
