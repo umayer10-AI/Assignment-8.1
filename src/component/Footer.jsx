@@ -24,7 +24,7 @@ const Footer = () => {
                 </h2>
               </div>
 
-              <p className="text-sm font-semibold text-gray-300">
+              <p className="text-sm text-gray-300">
                 A simple online platform to borrow and share books anytime, making reading accessible and convenient for everyone.
               </p>
             </div>
@@ -35,7 +35,7 @@ const Footer = () => {
               <h3 className="text-sm font-semibold mb-4">
                 About
               </h3>
-              <ul className="space-y-3 text-sm">
+              <ul className="space-y-3 text-sm text-gray-300">
                 <li>
                   <Link href="/about" className="hover:text-green-400 dark:hover:text-white">
                     Our Story
@@ -57,10 +57,10 @@ const Footer = () => {
 
           <div className="flex justify-center">
             <div>
-              <h3 className="text-sm font-semibolde mb-4">
+              <h3 className="text-sm font-semibold mb-4">
                 Contact Info
               </h3>
-              <ul className="space-y-3 text-sm">
+              <ul className="space-y-3 text-sm text-gray-300">
                 <li className="flex items-center gap-2">
                   <MdEmail /> support@bookborrow.com
                 </li>
