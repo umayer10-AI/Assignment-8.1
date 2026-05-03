@@ -22,7 +22,7 @@ const Banner = async () => {
                     </Marquee>
                     <div className='flex items-center gap-2'>
                         <Link href={'/all-book'}><Button className={'bg-linear-to-r from-cyan-500 to-blue-600'}>Browse Now</Button></Link>
-                        <Link href={'/price'}><Button variant='outline' className={'text-white'}>All price</Button></Link>
+                        <Link href={'/price'}><Button variant='outline' className={'border border-white'}>All price</Button></Link>
                     </div>
                 </div>
             </div>
