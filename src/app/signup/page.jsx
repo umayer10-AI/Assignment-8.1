@@ -1,7 +1,10 @@
 "use client"
-import { FieldError, Form, Input, InputGroup, Label, TextField } from '@heroui/react';
+import { Check, Eye, EyeSlash } from '@gravity-ui/icons';
+import { Button, FieldError, Form, Input, InputGroup, Label, TextField } from '@heroui/react';
+import Link from 'next/link';
 import React, { useState } from 'react';
 import { useForm } from 'react-hook-form';
+import { FcGoogle } from 'react-icons/fc';
 
 const SignUpPage = () => {
 
@@ -100,7 +103,7 @@ const SignUpPage = () => {
         <div className="mt-4 space-y-1">
             <h2 className="font-semibold text-center text-sm">Already have an account? <Link href={'/login'} className="text-blue-600">Login</Link></h2>
           <h2 className="text-center">Or</h2>
-          <Button onClick={handleGoogle} variant="outline" className={'w-full shadow'}><FcGoogle />Sign In With Google</Button>
+          <Button className={'w-full shadow'} variant='secondary'><FcGoogle />Sign In With Google</Button>
         </div>
         </div>
       </Form>
